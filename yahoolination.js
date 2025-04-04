@@ -28,7 +28,7 @@ function yahoorandom() {
     
     rawmonth = randomnumber(1,12) //for the sake of the display thing
 
-    // Randomized all parts of the date number that when joined together make up the capture date in the wayback url. 
+    // Randomized all parts of the date code that when joined together make up the capture date in the wayback url. 
     // https://help.archive.org/help/using-the-wayback-machine/#:~:text=In%20the%20event%20that%20we,middle%3B%20it%20translates%20as%20yyyymmddhhmmss.
     var YEAR = randomnumber(1998,2006);
     var MONTH = zeroPad(rawmonth,2);
@@ -41,7 +41,7 @@ function yahoorandom() {
 
     var FULLURL = "https://web.archive.org/web/"
 
-    //sometimes replace '/http://www.yahooligans.com/' with '/http://www2.yahooligans.com/' to increase randomization
+    //sometimes replace '/http://www.yahooligans.com/' with '/http://www2.yahooligans.com/' to increase variety
     if (randomnumber(0,1)) {
         yahoourlB = "/http://www2.yahooligans.com/";
         console.log("using www2!")
